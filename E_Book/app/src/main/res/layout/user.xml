@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/refillLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Add Money : "
+            android:textSize="30dp"/>
+        <EditText
+            android:id="@+id/refillText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Add Money"
+        android:onClick="onClickAddMoney"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Money: 0 USD"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+    <LinearLayout
+        android:id="@+id/checkLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Cart"
+            android:onClick="onClickCart"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text ="History"
+            android:onClick="onClickHistory"></Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text ="Back"
+            android:onClick="onClickBack"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/purchaseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:onClick="onPurchase"
+        android:visibility="invisible"/>
+    <ListView
+        android:id="@+id/listProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+
+</LinearLayout>
